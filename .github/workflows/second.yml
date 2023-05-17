@@ -2,7 +2,8 @@ name: workflow2
 on:
   push:
     branches: ["main"]
-
+env:
+  NAME: Abhiraj Chaudhary
 jobs:
   jobname:
     runs-on: windows-latest
@@ -20,4 +21,5 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          echo $NAME  
     
